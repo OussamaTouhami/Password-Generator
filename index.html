@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="passwordBox">
+            <div class="copyAlert" id="copyAlert">
+                Password Copied !
+            </div>
+            <h1>Password Generator</h1>
+            <div class="optionsGrp">
+                <input id="lc" type="checkbox">Include lowerCase <br>
+                <input id="uc" type="checkbox">Include upperCase <br>
+                <input id="nums" type="checkbox">Include Numbers <br>
+                <input id="chars" type="checkbox">Include Special chars <br>
+                <input type="range" value="0" max="16" id="passLength">
+                <p class="plp">Password Length</p>
+                <p style="margin: 0px 0 10px;" id="lengthVal"></p>
+            </div>
+
+            <button onclick="generate()" id="genBtn">
+                Generate
+            </button><br>
+            <input id="generatedPass" readonly style="border: none; text-align: center; margin: 1rem 0; font-weight: bold;
+            outline: none;"></input>
+            <br>
+            <button id="copyBtn" onclick="copyPassword()">
+                copy
+            </button>
+        </div>
+    </div>
+</body>
+</html>

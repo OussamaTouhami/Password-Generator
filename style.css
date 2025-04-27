@@ -1,0 +1,67 @@
+*{
+    background: hsl(0, 0%, 10%);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.passwordBox{
+    border: 1px solid black;
+    padding: 2rem;
+    text-align: center;
+    background: hsl(0, 0%, 20%);
+    border-radius: 20px;
+}
+.passwordBox h1{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.optionsGrp input{
+    accent-color: orange;
+    
+}
+.passwordBox *{
+    background: hsl(0, 0%, 20%);
+}
+.plp{
+    font-weight: bold;
+}
+#lengthVal{
+    font-size: 1.5rem;
+}
+#genBtn{
+    padding: 10px 30px;
+    background: orange;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+}
+#genBtn:hover{
+    opacity: 0.8;
+}
+#copyBtn{
+    padding: 5px 10px;
+    background: orange;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+}
+#copyBtn:hover{
+    opacity: 0.8;
+}
+.copyAlert{
+    background: #80b918;
+    width: 50%;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.5s ease;
+}
