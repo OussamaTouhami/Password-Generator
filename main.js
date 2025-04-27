@@ -63,3 +63,19 @@ copyBtn.addEventListener("click",function(){
         
     },4000);
 })
+
+let password = document.getElementById("generatedPass");
+let copyMsg = document.getElementById("copyMsg");
+copyMsg.style.display = "none"
+password.addEventListener("click",() =>{
+    let password = document.getElementById("generatedPass");
+    password.select();
+    navigator.clipboard.writeText(password.value);
+    copyMsg.style.display = "block"
+    password.style.color = "rgba(255, 245, 245, 0.66)"
+    setTimeout(() => {
+        copyMsg.style.display = "none"
+        password.style.color = "white"
+        
+    },3000);
+});
